@@ -10,6 +10,7 @@ void setup()
 }
 void draw()
 {
+  background(0);
   for (int i = 0; i < parts.length; i++){
     parts[i].show();
     parts[i].move();
@@ -23,7 +24,7 @@ class Particle
   {
     myX = 250;
     myY = 250;
-    mySpeed = Math.random()*100;
+    mySpeed = Math.random()*10;
     myAngle = Math.random() * 2 * Math.PI;
   }
   void move()
